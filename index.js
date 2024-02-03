@@ -3,55 +3,57 @@ const video = document.getElementById('vid');
 
 const sources = [
     {
-        audio: 'assets/songs/andidontfeelbad.mp4',
         video: 'assets/songs/andidontfeelbad.mp4',
         title: `Sha Gz - And I Don't Feel Bad`
     },
     {
-        audio: 'assets/songs/bent.mp4',
         video: 'assets/songs/bent.mp4',
         title: 'Kyle Richh - Bent'
     },
     {
-        audio: 'assets/songs/isyaready.mp4',
         video: 'assets/songs/isyaready.mp4',
         title: 'Kay Flock - Is Ya Ready'
     },
     {
-        audio: 'assets/songs/lastfridaynight.mp4',
         video: 'assets/songs/lastfridaynight.mp4',
         title: 'Trav Money “42” - Last Friday Night'
     },
     {
-        audio: 'assets/songs/misconceptions.mp4',
         video: 'assets/songs/misconceptions.mp4',
         title: 'Kyle Richh - Misconceptions / Juliet'
     },
     {
-        audio: 'assets/songs/penthouse.mp4',
         video: 'assets/songs/penthouse.mp4',
         title: 'Kyle Richh - Penthouse'
     },
     {
-        audio: 'assets/songs/psa.mp4',
         video: 'assets/songs/psa.mp4',
         title: 'Kay Flock - PSA'
     },
     {
-        audio: 'assets/songs/jennjennjenn.mp4',
         video: 'assets/songs/jennjennjenn.mp4',
         title: 'Jenn Carter - Jenn Jenn Jenn'
     },
     {
-        audio: 'assets/songs/eater.mp4',
         video: 'assets/songs/eater.mp4',
         title: '917 Rackz - Eater'
     },
     {
-        audio: 'assets/songs/tooteres.mp4',
         video: 'assets/songs/tooteres.mp4',
         title: 'Sdot Go - Tooteres'
-    }
+    },
+    {
+        video: 'assets/songs/deadly.mp4',
+        title: 'Nesty Gzz - Deadly'
+    },
+    {
+        video: 'assets/songs/freeg.mp4',
+        title: 'Sdot Go - Free G'
+    },
+    {
+        video: 'assets/songs/trick.mp4',
+        title: 'Kyle Richh - Trick'
+    },
 ];
 
 // Modify your randomizeVideo function to handle muting/unmuting on video change
