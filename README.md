@@ -1,4 +1,8 @@
-# xlzxq.lol (v1)
+# xlzxq.lol (v2)
 xlzxq.lol official website
 
-credits to gasps for background music video feature
+v2:
+added projects page
+removed music
+changed text (Nunito -> Poppins)
+switched out favicons for text

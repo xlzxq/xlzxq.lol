@@ -1,0 +1,105 @@
+body, html {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-velma {
+    background-color: white;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-image 1.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-velma:hover {
+    background-image: url('../images/velma.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card-snipedrop {
+    background-color: white;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-image 1.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-snipedrop:hover {
+    background-image: url('../images/snipedrop.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card h2, .card p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.card a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff9090;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card a.btn:hover {
+    background-color: #0056b3;
+}
+
+.card a.download {
+    background-color: #28a745;
+}
+
+.card a.download:hover {
+    background-color: #218838;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
