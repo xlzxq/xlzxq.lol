@@ -1,5 +1,9 @@
-# xlzxq.lol (v2)
+# xlzxq.lol (v2.1)
 xlzxq.lol official website
+
+## v2.1 changelog
+- modified projects page
+- readded music but only as a player
 
 ## v2 changelog
 - added projects page

@@ -18,7 +18,7 @@ h1 {
     padding: 20px;
 }
 
-.card-velma {
+.card-archive {
     background-color: white;
     width: 300px;
     margin: 15px;
@@ -29,14 +29,14 @@ h1 {
     overflow: hidden;
 }
 
-.card-velma:hover {
-    background-image: url('../images/velma.png');
+.card-archive:hover {
+    background-image: url('../images/Archive.png');
     background-size: cover;
     background-position: center;
     color: white;
 }
 
-.card-snipedrop {
+.card-deviate {
     background-color: white;
     width: 300px;
     margin: 15px;
@@ -47,8 +47,8 @@ h1 {
     overflow: hidden;
 }
 
-.card-snipedrop:hover {
-    background-image: url('../images/snipedrop.png');
+.card-deviate:hover {
+    background-image: url('../images/Deviate.png');
     background-size: cover;
     background-position: center;
     color: white;

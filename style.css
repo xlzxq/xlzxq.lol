@@ -45,3 +45,72 @@ body, html {
 .active .links-container {
     transform: translateY(-75px);
 }
+
+#music-player {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 320px;
+    color: white;
+    background: #222;
+    padding: 5px;
+}
+
+#music-player h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#music-player p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 0;
+}
+
+.controls button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 4px 7px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.controls button:hover {
+    background: #555;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+}
+
+#progress-bar {
+    width: 100%;
+    appearance: none;
+    background: #444;
+    height: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+#time-display {
+    font-size: 12px;
+    margin-top: 5px;
+}
