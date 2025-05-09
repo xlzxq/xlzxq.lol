@@ -11,43 +11,29 @@ h1 {
 
 body {
     background-color: black;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 1s ease-in;
     opacity: 1;
-}
-
-#background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    margin: 0;
     height: 100%;
-    background: url('assets/images/background.png') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.5s ease-in;
+    overflow: hidden;
 }
 
-#background-overlay.visible {
+html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+}
+
+canvas.visible {
     opacity: 1;
-}
-
-#notification-container {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.notification {
-    background-color: #161616;
-    color: #fff;
-    padding: 10px 15px;
-    font-family: sans-serif;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideIn 0.4s forwards, fadeOut 0.4s ease-out 2.2s forwards;
 }
 
 @keyframes slideIn {
@@ -64,17 +50,6 @@ body {
     }
 }
 
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    filter: brightness(20%);
-    pointer-events: none;
-}
-
 .before-text {
     color: rgb(200, 200, 200);
     transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -88,14 +63,14 @@ video {
 }
 
 .rainbow-text {
-    background: linear-gradient(90deg, white, black, white);
+    background: linear-gradient(90deg, white, white, gray, black, gray, white);
     background-clip: text;
     color: transparent;
     top: 48%;
     display: inline-block;
     transition: background-position 0.2s ease-in-out, font-size 0.3s ease-in-out, top 0.3s ease-in-out, color 0.3s ease-in-out;
     background-size: 200% 200%;
-    animation: rainbow-animation 2s infinite linear;
+    animation: rainbow-animation 3s infinite linear;
 }
 
 .pre-social-row a {
