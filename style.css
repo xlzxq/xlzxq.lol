@@ -1,3 +1,10 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 h1 {
     font-family: "Quicksand", sans-serif;
     margin: 0;
@@ -7,127 +14,19 @@ h1 {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 45px;
-}
-
-body {
-    background-color: black;
-    transition: opacity 1s ease-in;
-    opacity: 1;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-html {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-canvas {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    transition: opacity 1s ease-in;
-    opacity: 0;
-}
-
-canvas.visible {
-    opacity: 1;
-}
-
-@keyframes slideIn {
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-}
-
-.before-text {
     color: rgb(200, 200, 200);
-    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
     top: 50%;
+    transition: opacity 9.5s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+    opacity: 1;
 }
 
-.before-text:hover {
+h1:hover {
     color: white;
     font-size: 50px;
     cursor: pointer;
 }
 
-.rainbow-text {
-    background: linear-gradient(90deg, white, white, gray, black, gray, white);
-    background-clip: text;
-    color: transparent;
-    top: 48%;
-    display: inline-block;
-    transition: background-position 0.2s ease-in-out, font-size 0.3s ease-in-out, top 0.3s ease-in-out, color 0.3s ease-in-out;
-    background-size: 200% 200%;
-    animation: rainbow-animation 3s infinite linear;
-}
-
-.pre-social-row a {
-    position: fixed;
-    color: white;
-    top: 50%;
-    left: 50%;
-    opacity: 0%;
+.fade-out {
+    opacity: 0;
     pointer-events: none;
-    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.social-row a {
-    color: white;
-    opacity: 100%;
-    pointer-events: auto;
-    transition: opacity 0.5s ease-in-out;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 25px;
-    text-decoration: none;
-}
-
-.social-row a:hover {
-    background-color: rgb(40, 40, 40);
-}
-
-.social-row a .discord {
-    position: fixed;
-    left: 46.45%;
-    top: 51.5%;
-}
-
-.social-row a .github {
-    position: fixed;
-    left: 48.35%;
-    top: 51.5%;
-}
-
-.social-row a .youtube {
-    position: fixed;
-    left: 50.3%;
-    top: 51.5%;
-}
-
-.social-row a .spotify {
-    position: fixed;
-    left: 52.35%;
-    top: 51.5%;
-}
-
-@keyframes rainbow-animation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 200% 200%;
-    }
 }
